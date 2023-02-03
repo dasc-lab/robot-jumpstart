@@ -13,6 +13,9 @@
   - change `Device` in `mavlink_router.conf` to `Device = /dev/ttyUSB0`
   - change `bridge -d` in `Dockerfile` to `-d /dev/ttyTHS2`
   - in docker, change alias for bridge in .bashrc to `-d /dev/ttyTHS2`
+- if using JETSON Xavier (with dev's custom base board):
+  - change `Device` in `mavlink_router.conf` to `Device = /dev/ttyUSB0`
+  - change `bridge -d` in `Dockerfile` to `-d /dev/ttyUSB1`
 - in `mavlink_router.conf`:
   - change the base station's IP address
 - in `docker-compose.yaml`:
